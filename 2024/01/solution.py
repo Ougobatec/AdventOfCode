@@ -1,7 +1,6 @@
 # Solution pour le jour 01 de l'Advent of Code 2024
 
-file = open('input.txt')
-lines = file.readlines()
+with open('input.txt') as f: lines = f.readlines()
 
 list1 = []
 list2 = []

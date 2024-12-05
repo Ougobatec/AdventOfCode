@@ -2,8 +2,7 @@
 
 import re
 
-file = open('input.txt')
-text = file.read()
+with open('input.txt') as f: text = f.read()
 
 template = r"mul\((\d{1,3}),(\d{1,3})\)"
 res = re.findall(template, text)
