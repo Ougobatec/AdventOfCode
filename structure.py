@@ -15,7 +15,13 @@ for year in years:
         input = os.path.join(path, "input.txt")
 
         if not os.path.exists(solution):
-            with open(solution, 'w') as f: f.write(f"# Solution pour le jour {day:02d} de l'Advent of Code {year}\n")
+            with open(solution, 'w', encoding='utf-8') as f:
+                f.write(f'# Solution pour le jour {day:02d} de l\'Advent of Code {year}\n\n')
+                f.write('with open("input.txt") as f: text = f.read()\n\n')
+                f.write('res1 = 0\n')
+                f.write('print("La première réponse est", res1)\n\n')
+                f.write('res2 = 0\n')
+                f.write('print("La deuxième réponse est", res2)')
             print(f"Le fichier {path}/solution a été créer.")
         
         if not os.path.exists(input):
