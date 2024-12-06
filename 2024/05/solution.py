@@ -10,8 +10,8 @@ for line in lines[:sep]:
 list2 = [list(map(int, line.split(","))) for line in lines[sep+1:]]
 
 def correct(update):
-    for i, o in enumerate(update):
-        if set(list1[o]) & set(update[:i]): return False
+    for i, page in enumerate(update):
+        if set(list1[page]) & set(update[:i]): return False
     return True
 
 def sort(update):
