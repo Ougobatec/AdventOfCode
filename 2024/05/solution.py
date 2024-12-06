@@ -1,9 +1,38 @@
 # Solution pour le jour 05 de l'Advent of Code 2024
 
-with open("input.txt") as f: text = f.read()
+with open("input.txt") as f: lines = f.readlines()
+
+sep = lines.index("\n")
+list1 = {}
+for line in lines[:sep]:
+    a, b = map(int, line.strip().split('|'))
+    list1.setdefault(a, []).append(b)
+list2 = [list(map(int, line.split(","))) for line in lines[sep+1:]]
+
+def correct(update):
+    for i, o in enumerate(update):
+        if set(list1[o]) & set(update[:i]): return False
+    return True
+
+def sort(update):
+    sorted = [update[0]]
+    for i in range(1, len(update)):
+        inserted = False
+        for j in range(len(sorted)):
+            if update[i] in list1[sorted[j]]:
+                sorted.insert(j, update[i])
+                inserted = True
+                break
+        if not inserted: sorted.append(update[i])
+    return sorted
 
 res1 = 0
-print("La première réponse est", res1)
-
 res2 = 0
+for update in list2:
+    if correct(update): res1 += update[len(update) // 2]
+    else: 
+        sorted = sort(update)
+        res2 += sorted[len(sorted) // 2]
+
+print("La première réponse est", res1)
 print("La deuxième réponse est", res2)
