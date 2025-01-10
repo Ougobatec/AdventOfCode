@@ -1,5 +1,7 @@
 # Advent of Code - Solutions Python
 
+[![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org)
+
 Bienvenue sur mon dépôt GitHub pour l'**Advent of Code** ! 🎄
 
 Ce dépôt contient mes solutions aux défis de l'[Advent of Code](https://adventofcode.com/), le tout en Python. Chaque année, l'Advent of Code propose des défis quotidiens croissants en complexité, et ce dépôt regroupe toutes mes solutions au fil des ans.
