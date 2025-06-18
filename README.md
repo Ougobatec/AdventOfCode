@@ -2,9 +2,9 @@
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org)
 
-Bienvenue sur mon dépôt GitHub pour l'**Advent of Code** ! 🎄
+Bienvenue sur mon dépôt GitHub de l'**Advent of Code** ! 🎄
 
-Ce dépôt contient mes solutions aux défis de l'[Advent of Code](https://adventofcode.com/), le tout en Python. Chaque année, l'Advent of Code propose des défis quotidiens croissants en complexité, et ce dépôt regroupe toutes mes solutions au fil des ans.
+Ce projet regroupe mes solutions aux défis de l'[Advent of Code](https://adventofcode.com/), écrites en Python. Chaque année, l'Advent of Code propose des énigmes quotidiennes durant le calendrier de l'Avent, avec une difficulté croissante. Ce dépôt centralise l'ensemble de mes solutions au fil des années.
 
 ## 🚀 Objectif
 
